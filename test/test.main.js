@@ -7,7 +7,7 @@ var iv;
 
 window.URL = {
   createObjectURL: function (p) {
-    return p
+    return p;
   }
 };
 
@@ -20,7 +20,7 @@ describe('imageview', function () {
     }).to.throw('This needs to be input[type="file"]');
   });
 
-  it('should display image in preview', function (done) {
+  it('should display an image preview and return the data uri', function (done) {
     iv = new ImageView();
 
     iv.generate({

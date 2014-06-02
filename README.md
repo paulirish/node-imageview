@@ -25,7 +25,7 @@ This is an alternative to using a file input and uploading via multipart - inste
 
 `picField` is where you want the data URI to be applied. `photoSelector` is where your file input is located. `preview` is where you want the canvas element to display the resized image.
 
-`picField`, `photoSelector` and `preview` are the document IDs for each DOM element. They default to the ones above if nothing is provided. `quality` defaults to 0.4 for JPEG quality and `maxSize` is the maximum width for the resized image.
+`picField`, `photoSelector` and `preview` are the document IDs for each DOM element. They default to the ones above if nothing is provided. `quality` defaults to 0.4 for JPEG quality and `maxSize` is the maximum width and height for the resized image.
 
 ## Tests
 
