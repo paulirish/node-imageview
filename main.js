@@ -13,8 +13,6 @@ var ImageView = function (options) {
   var quality = parseFloat(options.quality) || 0.4;
   var maxSize = parseInt(options.maxSize, 10) || 100;
 
-  var self = this;
-
   this.generate = function (ev, next) {
 
     if (!ev.target || (ev.target && !ev.target.files)) {
