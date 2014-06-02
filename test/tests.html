@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="../node_modules/mocha/mocha.js"></script>
+    <script type="text/javascript" src="../node_modules/chai/chai.js"></script>
+    <script>
+      mocha.ui('bdd');
+      mocha.reporter('html');
+
+      expect = chai.expect;
+    </script>
+    <script type="text/javascript" src="suite.bundle.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="test-content">
+      <div id="preview"></div>
+      <textarea id="photo"></textarea>
+      <input type="file" id="photo-picker" />
+    </div>
+    <script>
+      mochaPhantomJS.run();
+    </script>
+  </body>
+</html>
