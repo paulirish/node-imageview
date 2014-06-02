@@ -60,4 +60,10 @@ var ImageView = function (options) {
   };
 };
 
-module.exports = ImageView;
+if (typeof define === 'function' && define.amd) {
+  define(function () {
+    return ImageView;
+  });
+} else if (typeof module !== 'undefined' && module.exports) {
+  module.exports = ImageView;
+}
